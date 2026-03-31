@@ -1,0 +1,31 @@
+<div>
+    <!-- NAVBAR Start -->
+    <!-- Using TailwindCSS: If unsure of any setting "sticky", "justify-between", etc... go to https://tailwindcss.com/ and insert the setting in the Search bar -->
+    <header class="sticky top-0 z-50 flex justify-between items-center space-x-1 border-b bg-white p-4 shadow-md">
+      <a class="text-3xl font0mono" href="">CarTrader</a>
+    </header>
+    <!-- NAVBAR End   -->
+
+    <!-- HOME HERO Start -->
+     <!-- Background image spanning whole screen -->
+    <div class="relative h-screen w-100 bg-no-repeat bg-cover bg-bottom bg-[url('https://carconfigurator.ferrari.com/rt-assets/data/cars/purosangue/ui/splashpage.jpg')]">
+      <div class="z-10 absolute w-full h-full flex justify-center items-center ">
+        <div class="text-center w-1/2">
+          <h1 class="text-8xl font-serif mb-10 text-white">Find your Drive</h1>
+          <!-- HOME SEARCH BAR Start -->
+           <div class="font-serif w-[1000px] text-2xl rounded-full bg-white flex justify-between overflow-hidden drop-shadow-2xl mx-auto">
+            <input 
+              type="text" 
+              class="py-3 px-5 w-full text-2xl rounded-full focus:outline-none"
+              placeholder="Search by city" 
+            />
+            <button class="bg-sky-500 px-10 text-white">Search</button>
+           </div>
+          <!-- HOME SEARCH BAR End   -->
+        </div>
+      </div>
+      <!-- Give a dark tint -->
+      <div class="z-1 absolute w-full h-full opacity-50 bg-black"></div>
+    </div>
+    <!-- HOME HERO End   -->
+  </div>
