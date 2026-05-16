@@ -4,7 +4,6 @@ useHead({title: "Car Trader"})
 
 <template>
   <div>
-    <NavBar />
     <CarHero />
   </div>
 </template>
