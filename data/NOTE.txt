@@ -1,0 +1,1 @@
+"data" is not a special directory name in Nuxt, just figured it was a nice folder name to store json data we use

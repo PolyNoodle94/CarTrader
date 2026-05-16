@@ -1,5 +1,7 @@
 <script setup>
 
+const error = useError()
+
 const handleError = () => {
     navigateTo("/")
 }
@@ -8,8 +10,8 @@ const handleError = () => {
 
 <template>
     <div class="flex h-screen justify-center items-center flex-col">
-        <h1 class="text-9xl">404</h1>
-        <p class="mt-7 text-4xl">Page not found</p>
+        <h1 class="text-9xl">{{ error.status }}</h1>
+        <p class="mt-7 text-4xl">{{ error.message }}</p>
         <button class="rounded mt-7 text-2xl bg-blue-400 px-7 py-4 text-white" @click="handleError">Go Back</button>
     </div>
 </template>
