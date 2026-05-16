@@ -1,3 +1,7 @@
+<script setup>
+useHead({title: "Car Trader"})
+</script>
+
 <template>
   <div>
     <NavBar />
