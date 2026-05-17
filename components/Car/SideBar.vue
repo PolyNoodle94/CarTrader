@@ -15,6 +15,15 @@ const updateModal = (key) => {
 
 const onChangeLocation = () => {
     if (!city.value) return
+
+    // Check if user provided an integer, or an integer with words. If no digits were inputted, parseInt returns NaN
+    if (Number.isInteger(parseInt(city.value))) {
+        // Client side error since it involves the user inputting invalid information in an input field
+        throw createError({
+            statusCode: 400,
+            message: "Invalid city format",
+        })
+    } 
     updateModal('location')
     navigateTo(`/city/${city.value}/car/${route.params.make}`)
     city.value = ""
